@@ -45,5 +45,6 @@ return [
     'aliases' => [
         '@yiipal/base' => '@vendor/yiipal/yii2-base',
         '@yiipal/cck' => '@vendor/yiipal/yii2-cck',
+        '@yiipal/cck/text' => '@vendor/yiipal/yii2-cck/text',
     ]
 ];
