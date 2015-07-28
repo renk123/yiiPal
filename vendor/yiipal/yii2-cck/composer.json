@@ -1,0 +1,21 @@
+{
+    "name": "yiipal/yii2-cck",
+    "description": "Content Construction Kit for yiiPal",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steven.R",
+            "email": "359876077@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "yiipal\\cck\\": ""
+        }
+    }
+}
