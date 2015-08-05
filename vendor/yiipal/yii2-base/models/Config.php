@@ -39,7 +39,7 @@ class Config extends ActiveRecord{
     public function rules()
     {
         $rules = [
-            [['name','label'], 'required'],
+            [['name'], 'required'],
             ['name', 'match', 'pattern' => '/^[a-z][a-z0-9]*$/i'],
             ['name', 'validateUniqueName', 'on'=>'uniqueName'],
             [['data'], 'safe'],
@@ -76,7 +76,7 @@ class Config extends ActiveRecord{
         //$result = Config::find(['collection'=>$this->collection, 'name'=>$this->$attribute]);
         $result = Config::findOne(['name'=>$this->$attribute]);
         if($result){
-            $this->addError($attribute, '字段名已经存在！');
+            $this->addError($attribute, '名称已经存在！');
         }
     }
 

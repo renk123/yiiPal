@@ -22,15 +22,15 @@ $this->title = 'gis';
                 'columns' => [
                     ['class' => 'yii\grid\SerialColumn'],
                     'nid',
-                    'company',
-                    'company'=>[
-                        'class' => 'yii\grid\DataColumn',
-                        'attribute'=> 'company',
-                        'label' => '字段名',
-                        'value' => function ($data) {
-                            return $data->attachedFields['company']->raw['value'];
-                        },
-                    ],
+//                    'company',
+//                    'company'=>[
+//                        'class' => 'yii\grid\DataColumn',
+//                        'attribute'=> 'company',
+//                        'label' => '字段名',
+//                        'value' => function ($data) {
+//                            return $data->attachedFields['company']->raw['value'];
+//                        },
+//                    ],
                     [
                         'class' => 'yii\grid\ActionColumn',
                         'template' => '{update} {delete}',

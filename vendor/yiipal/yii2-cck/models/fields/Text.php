@@ -22,7 +22,7 @@ class Text extends BaseField
         if($this->options['required'] == 1){
             $rules[] = ['value', 'required'];
         }
-        if(isset($this->options['maxlength'])){
+        if($this->options['maxlength']>1){
             $rules[] = ['value', 'string', 'max'=>intval($this->options['maxlength'])];
         }
         return $rules;

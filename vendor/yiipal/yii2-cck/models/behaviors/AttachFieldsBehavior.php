@@ -41,9 +41,10 @@ class AttachFieldsBehavior extends behaviors\AttributeBehavior
 
     public function getFieldsInfo($type, $fieldName = null){
         $cacheIndex = $type.'_'.$fieldName;
-        if($fieldsInfo = Yii::$app->cache->get($cacheIndex)){
-            return $fieldsInfo;
-        }
+//        FIXME：等待清楚缓存模块做好后，开启缓存功能呢。
+//        if($fieldsInfo = Yii::$app->cache->get($cacheIndex)){
+//            return $fieldsInfo;
+//        }
         $conditions = ['collection'=>self::FIELD_PREFIX.$type];
         if(isset($fieldName)){
             $conditions['name'] = $fieldName;
@@ -139,9 +140,9 @@ class AttachFieldsBehavior extends behaviors\AttributeBehavior
             $this->attachFields($event);
         }
         foreach($this->attachedFields as $key => &$attachedField){
-            $raw['value'] = $event->sender->company;
-            $raw['bundle'] = $event->sender->company_bundle;
-            $attachedField->raw = $raw;
+//            $raw['value'] = $event->sender->company;
+//            $raw['bundle'] = $event->sender->company_bundle;
+//            $attachedField->raw = $raw;
         }
     }
 

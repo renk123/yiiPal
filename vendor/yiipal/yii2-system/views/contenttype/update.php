@@ -21,7 +21,7 @@ $this->title = '新增内容类型';
                 <?= $form->field($model, 'data_description')->textarea() ?>
 
                 <div class="form-group">
-                    <?= Html::submitButton('提交', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                    <?= Html::submitButton('提交', ['class' => 'btn btn-primary', 'name' => 'submit-button']) ?>
                 </div>
             </div>
             <div class="col-xs-6">

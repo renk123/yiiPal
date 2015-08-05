@@ -16,6 +16,14 @@ return [
             'field_class' => 'yiipal\cck\models\fields\Text',
             'setting_url' => '/cck/fields/text',
         ],
+        'nodereference' => [
+            'field_name' => 'NodeReference',
+            'field_type' => 'nodereference',
+            'field_label' => '关联内容',
+            'field_description' => '关联其他类型的内容',
+            'field_class' => 'yiipal\cck\models\fields\NodeReference',
+            'setting_url' => '/cck/fields/nodereference',
+        ],
         'body' => [
             'field_name' => 'body',
             'field_type' => 'body',

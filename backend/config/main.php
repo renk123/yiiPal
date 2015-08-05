@@ -22,6 +22,9 @@ return [
         'system' => [
             'class' => 'yiipal\system\Module',
         ],
+        'views' => [
+            'class' => 'yiipal\views\Module',
+        ],
     ],
     'components' => [
         'user' => [

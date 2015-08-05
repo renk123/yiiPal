@@ -31,7 +31,9 @@ class ContenttypeController extends BaseController{
     public function actionCreate()
     {
         $model = new Config(['scenario'=>'uniqueName']);
-        $model->collection  = 'node.type';//.BaseHelp::post($model,'name');
+        $model->setAttributeLabels(['label'=>'名称']);
+        $model->addRule('label', 'required');
+        $model->collection  = 'node.type';
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['index']);
         } else {

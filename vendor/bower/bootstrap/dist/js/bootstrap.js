@@ -285,16 +285,15 @@ if (typeof jQuery === 'undefined') {
     .on('focus.bs.button.data-api blur.bs.button.data-api', '[data-toggle^="button"]', function (e) {
       $(e.target).closest('.btn').toggleClass('focus', /^focus(in)?$/.test(e.type))
     })
-
 }(jQuery);
 
-/* ========================================================================
- * Bootstrap: carousel.js v3.3.4
- * http://getbootstrap.com/javascript/#carousel
- * ========================================================================
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
+    /* ========================================================================
+     * Bootstrap: carousel.js v3.3.4
+     * http://getbootstrap.com/javascript/#carousel
+     * ========================================================================
+     * Copyright 2011-2015 Twitter, Inc.
+     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+     * ======================================================================== */
 
 
 +function ($) {

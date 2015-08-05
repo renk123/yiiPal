@@ -18,5 +18,7 @@ class JqueryAsset extends AssetBundle
     public $sourcePath = '@bower/jquery/dist';
     public $js = [
         'jquery.js',
+        //'jquery-1.10.2.min.js',
+        //'jquery-1.11.3.min.js',
     ];
 }

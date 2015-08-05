@@ -35,7 +35,9 @@ class BaseField extends \yii\db\ActiveRecord
         if(isset($options['name'])){
             self::$tableName = $options['name'];
         }
-        $this->value = $this->options['default_value'];
+        if(isset($options['default_value'])){
+            $this->value = $options['default_value'];
+        }
     }
 
     /**

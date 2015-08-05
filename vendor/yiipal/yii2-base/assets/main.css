@@ -1,0 +1,16 @@
+.container {  /* Margin/padding copied from Bootstrap */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    /* Set width to your desired site width */
+    width: 1170px;
+}
+
+ul.horizontal-list{
+    list-style: none;
+}
+ul.horizontal-list li{
+    float: left;
+}
